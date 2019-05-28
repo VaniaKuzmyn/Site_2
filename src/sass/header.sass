@@ -1,0 +1,499 @@
+﻿body
+	font-size: 16px
+	background-color: #f3f1f2
+.header
+	
+	font-family: Gotham Medium 
+	
+.header-wrap
+	margin: 0 auto
+	overflow: hidden
+.top
+	min-height: 75px
+	position: relative
+	background-color: #fff
+.logo
+	margin: auto 0
+	text-align: right
+	& img
+		
+		max-width: 100%
+
+.menu-mobile
+	justify-content: center
+	align-items: center
+	height: 100%
+	display: none
+	cursor: pointer
+.menu-desc
+	text-align: right
+	min-height: 100%
+	
+	display: flex
+	justify-content: center
+	align-items: center
+	& a
+		display: inline-block
+		color: #96a6a7
+		font-size: 0.8rem
+		padding: 0 10px
+		text-transform: uppercase
+		
+.login
+	
+	display: flex
+	justify-content: flex-start
+	align-items: center
+	color: #ffffff
+	position: static
+	
+	& .scan
+		box-sizing: border-box
+		transition: all 1s
+		display: flex
+		justify-content: space-between
+		padding: 0 50px 0 15px
+		align-items: center
+		position: absolute
+		font-size: 1.5rem
+		background-color: #e2dee0
+		height: 100%
+		width: 70%
+		z-index: 0
+		right: -48%
+		top: 0
+		&-wrap
+			display: flex
+			justify-content: center
+			align-items: center
+		& a
+			color: inherit
+		
+		&:before
+			content: ''
+			position: absolute
+			left: -73px
+			top: 0
+			border: 37px solid #e2dee0
+			border-left: 37px solid transparent
+			border-bottom: 37px solid transparent
+		
+			
+
+		&-sear
+			margin-right: 10px
+			cursor: pointer
+		&-active
+			right: 12px
+			z-index: 3
+		&-i
+			color: #fff
+			cursor: pointer
+			&:hover
+			color: #96a6a7
+
+	& .log
+		display: flex
+		justify-content: center
+		align-items: center
+		background-color: #e94e38
+		height: 100%
+		flex-grow: 1
+		margin-left: 100px
+		text-transform: uppercase
+		z-index: 1
+		cursor: pointer
+		& i
+			padding-right: 10px
+
+.travel
+	background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('../images/bg/Layer_4.png') center center no-repeat
+	background-size: cover
+	min-height: 375px
+	position: relative 
+	text-align: center
+	color: #ffffff
+.typed-cursor
+	font-size: 30px
+.search
+	padding-bottom: 40px
+	&-form
+		margin-top: 55px
+	&-text
+		font-size: 30px
+		margin-bottom: 30px
+		color: rgba(#fff, 0.9)
+		display: inline-block
+		&-wrap
+			min-height: 80px
+	&-sel
+		font-family: "Gotham - Book"
+		font-size: 18px
+		width: 230px
+		margin: 0 10px
+		border: 1px solid rgba(255, 255, 255, 0.2)
+		border-radius: 20px
+		box-sizing: border-box
+		padding: 10px 20px
+		color: rgba(#ffffff,0.5)
+		appearance: none
+		background: url('../images/icon/arrow-down-sign-to-navigate.svg') center right 20px no-repeat, rgba(#000,0.3)
+		background-size: 20px 20px	
+		&::-ms-expand
+			display: none
+	&-inp
+		font-family: "Gotham - Book"
+		font-size: 18px
+		background-color: rgba(#000,0.3)
+		border: 1px solid rgba(255, 255, 255, 0.2)
+		border-radius: 20px
+		padding: 10px 20px
+		width: 485px
+		color: rgba(#fff, 0.5)
+		margin-top: 15px
+		cursor: pointer
+		&::placeholder
+			color: rgba(#ffffff, 0.5)
+		&::-moz-placeholder
+			color: rgba(#ffffff, 1)
+		
+
+	&-btn
+		border: none
+		box-shadow: 0 2px 0 #8b8aec
+		background-color: #8b8aec
+		text-transform: uppercase
+		padding: 18px 25px
+		border-radius: 30px
+		margin-top: 25px
+		color: #ffffff
+		font-size: 18px
+		position: relative
+		overflow: hidden
+		&:hover
+			&:after
+				animation: blink 0.5s
+		&:after
+			content: ''
+			position: absolute
+			left: -20%
+			top: -50px
+			width: 10px
+			height: 130px
+			background-color: rgba(#fff, 0.2)
+			transform: rotate(30deg)
+		
+.over
+	&-form
+		color: rgba(#ffffff, 0.5)
+		font-size: 25px
+		display: none
+
+	&-title
+		display: inline-block
+		margin-top: 50px
+	&-sel
+		margin-top: 30px
+	&-inp
+		margin-top: 30px
+	
+			
+.sub
+	display: flex
+	justify-content: center
+	align-items: center
+	text-transform: uppercase
+	font-size: 12px
+	color: #96a6a7
+	min-height: 60px
+	&-select
+		padding: 10xp
+		
+	&-item
+		padding: 0 10px
+		cursor: pointer
+		color: #96a6a7
+		&_active
+			color: red
+	&_2
+		&-item
+			margin: 0 2px
+.foots
+	background-color: #fff
+	&-select
+		box-sizing: border-box
+		color: red
+		padding: 10px 25px 10px 10px
+		border-radius: 20px
+		appearance: none
+		font-size: 12px
+		background: url('../images/icon/arrow-down-sign-to-navigate.svg') center right 10px no-repeat
+		background-size: 10px 10px	
+		overflow: visible
+		&::-ms-expand
+			display: none
+
+.map
+	position: fixed
+	left: 50%
+	transform: translateX(-50%)
+	top: 30px
+	background-color: rgba(#000, 0.8)
+	z-index: 10
+	display: none
+	&-close
+		position: absolute
+		right: 11px
+		top: 50px
+		cursor: pointer
+		font-size: 40px
+		color: rgba(#e94e38, 0.9)
+		z-index: 11
+	&-btn
+		white-space: nowrap
+		background-color: #1baf5d
+		border: 1px solid #1baf5d
+		border-radius: 20px
+		padding: 10px 15px
+		font-size: 12px
+		color: #ffffff
+		cursor: pointer
+		
+		& span
+			display: inline-block
+			margin-right: 10px
+.iframe
+	display: none
+	
+.filter
+	
+	&-text
+		margin-right: 5px
+	& i
+		font-size: 20px
+		display: inline-block
+		padding: 10px
+		border-radius: 50%
+		margin: 0 5px
+		color: #fff
+		cursor: pointer
+	&-i_1
+		background-color: #1baf5d
+	&-i_2
+		background-color: #b6c0c1
+	&-i_3
+		background-color: #b6c0c1
+	&-i_4
+		background-color: #f19e1f
+	&-i_5
+		background-color: #88499c
+
+.enter
+	display: none
+	z-index: 10
+	&-form
+		position: fixed
+		left: 50%
+		top: 100px
+		transform: translateX(-50%)
+		max-width: 600px
+		padding: 80px;
+		text-align: center
+		z-index: 10
+		background: rgb(52, 56, 61)
+	&-title
+		text-align: center
+		color: rgb(255, 255, 255)
+	
+		
+	&-pass
+	&-wrap
+		background: rgb(28, 30, 33)
+		position: relative
+		width: 80%
+		padding: 0 10px
+		margin: 20px auto 0
+	&-inp
+		background: transparent
+		width: 100%
+		padding: 10px 
+
+		border: none
+		color: white
+	&-btn
+		position: absolute
+		top: 50%
+		right: 0
+		transform: translateY(-50%) translateX(50%)
+		background-color: rgb(28, 30, 33)
+		border: 5px solid rgb(52, 56, 61)
+		border-radius: 50%
+		padding: 15px 12px 15px 15px
+		color: rgb(52, 56, 61)
+		&:hover
+			color: rgb(0, 126, 165)
+			cursor: pointer
+			text-shadow: 0 0 10px rgb(0, 126, 165)
+			border: 5px solid rgb(0, 126, 165)
+	&-forgot
+		margin-top: 10px
+		color: rgb(79, 85, 97)
+		&-click
+			color: rgb(111, 119, 135)
+			&:hover
+				color: rgb(111, 119, 135)
+	&-name
+		border-bottom: 1px solid rgb(52, 56, 61)
+	&-exit
+		font-size: 30px
+		font-weight: 900
+		text-shadow: 0 0 5px rgb(28, 30, 33)
+		position: absolute
+		top: 10px
+		right: 10px
+		&:hover
+			color: rgb(0, 126, 165)
+			cursor: pointer
+			text-shadow: 0 0 10px rgb(0, 126, 165)
+	&-over
+		display: none
+	
+
+
+@media(max-width: 991px)
+	.map
+		font-size: 15px
+	.foot-select
+		font-size: 15px
+	.sub
+		font-size: 15px
+	.filter
+		font-size: 25px
+		justify-content: space-around
+	.login .log
+		padding-left: 10px
+	.title-text
+		font-size: 25px
+	.menu
+		position: static
+	.menu-desc
+		display: none
+		position: absolute
+		left: 0
+		top: 75px
+		background-color: rgba(red, 0.9)
+		z-index: 1
+		width: 100%
+		text-align: center
+		font-size: 25px
+		background-color: rgba(96, 52, 202, 0.87)
+		outline: none
+		&_active
+			display: block
+			&:focus
+				outline: none
+				border: none
+		& li
+			&:hover
+				background-color: rgba(96, 52, 202, 1)
+			
+	.menu-mobile
+		display: flex
+		
+	.title-sel
+		width: 44%
+	.title-inp
+		width: 94%
+	.login
+		& .scan
+			right: -350px
+			&-active
+				right: 12px
+
+
+
+
+		
+
+@media(max-width: 768px)
+	.title-sel
+		width: 95%
+		margin: 10px
+	.title-inp
+		width: 95%
+	.login
+		& .scan
+			right: -250px
+			&-active
+				right: 0
+
+
+@media(max-width: 576px)
+	.menu
+		order: 3
+		padding: 10px 0
+		background: #c7cecf
+		postition: static 
+		
+	.filter
+		font-size: 15px
+		
+	.foot .sub_1
+		padding: 0 5px;
+	.filter
+		justify-content: center
+		& i
+			font-size: 10px
+	.login
+		padding: 0
+		& .scan
+			display: none
+	.map
+		width: 90%
+		
+	.iframe
+		width: 100% !important
+		
+@media(max-width: 400px)
+	.filter
+		& i
+			padding: 10px
+
+
+.top
+	align-items: stretch !important
+
+a.active.focus,
+a.active:focus,
+a.focus,
+a:active.focus,
+a:active:focus,
+a:focus,
+button.active.focus,
+button.active:focus,
+button.focus,
+button:active.focus,
+button:active:focus,
+button:focus,
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus 
+	outline: 0!important;
+	outline-color: transparent!important;
+	outline-width: 0!important;
+	outline-style: none!important;
+	box-shadow: 0 0 0 0 rgba(0,123,255,0)!important;
+
+@keyframes blink
+	0%
+		left: -20%
+	
+	100%
+		left: 130%
+	
+
+    
+

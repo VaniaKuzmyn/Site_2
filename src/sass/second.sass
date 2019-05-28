@@ -1,0 +1,213 @@
+.section
+	font-family: Gotham
+
+	&_2
+		
+		max-width: 1050px
+		margin: 0 auto
+		text-align: center
+		border-bottom: 1px solid #e2dee0 
+		padding-bottom: 40px
+		&-wrap
+			display: flex
+			flex-wrap: wrap
+			justify-content: center
+			text-align: left
+button
+	padding: 0
+	
+.cards
+	width: 210px
+	min-height: 255px
+	position: relative
+	margin: 20px
+	background-color: #fff
+	box-sizing: border-box
+	cursor: pointer
+	overflow: hidden
+
+	&-price
+		position: absolute
+		top: 10px
+		right: 10px
+		color: #ffffff
+		font-size: 12px
+		background-color: #1baf5d
+		border-radius: 50%
+		padding: 10px
+	&-img
+		&_green
+			border-bottom: 3px solid #1baf5d
+		&_yellow
+			border-bottom: 3px solid #f19e1f
+		&_violet
+			border-bottom: 3px solid #88499c
+		
+	&-title
+		margin-top: 30px
+		color: #566375;
+		font-size: 14px;
+		text-align: center
+	&-name
+		margin-top: 20px
+		font-size: 12px;
+		
+		text-transform: uppercase
+		text-align: center
+		&_green
+			color: #1baf5d;
+		&_yellow
+			color: #f19e1f
+		&_violet
+			color: #88499c
+			
+	&-icon
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+		top: 107px
+		border: 3px solid #ffffff
+		border-radius: 50%
+		font-size: 25px
+		padding: 12px
+		color: #fff
+		&_green
+			background-color: #1baf5d
+		&_yellow
+			background-color: #f19e1f
+		&_violet
+			background-color: #88499c
+	&-main
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 140px
+		background-color: rgba(#88499c, 0.7)
+		&-btn
+			margin-left: 50%
+			white-space: nowrap
+			transform: translateX(-50%)
+			border: 2px solid rgba(#ffffff, 0.9)
+			background-color: rgba(#88499c, 0.7)
+			border-radius: 20px
+			color: rgba(#ffffff, 0.9)
+			font-size: 12px
+			text-transform: uppercase
+			padding: 10px 20px
+			margin-top: 20px
+			&-i
+				margin-right: 10px
+
+.stars
+	display: flex
+	justify-content: center
+	color: rgba(#ffffff, 0.9)
+	margin-top: 12px
+	&-left
+		margin-right: 20px
+	
+.cardl
+	position: relative
+	background-color: #fff
+	max-width: 455px
+	min-height: 255px
+	margin: 20px 25px
+	cursor: pointer
+	overflow: hidden
+	&-img
+		&_green
+			border-bottom: 3px solid #1baf5d
+		&_yellow
+			border-bottom: 3px solid #f19e1f
+		&_violet
+			border-bottom: 3px solid #88499c
+	&-icon
+		position: absolute
+		left: 10%
+		transform: translateX(-50%)
+		top: 90px
+		border: 3px solid #ffffff
+		border-radius: 50%
+		font-size: 25px
+		padding: 12px
+		color: #fff
+
+	&-main
+		color: #ffffff
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		background-color: rgba(#000, 0.5)
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-top: 63px
+		padding-top: 30px
+		padding-bottom: 10px
+		font-size: 18px
+		text-transform: uppercase
+		&-title
+			margin-right: 10px
+		&-star
+			margin-left: 10px
+	&-text
+		display: flex
+		justify-content: center
+		align-items: center
+		&-photo
+			border: 2px solid #f3f1f2
+			border-radius: 50%
+			position: relative
+			margin: 0 16px
+
+		&-wrap
+			&-star
+				margin-top: 15px
+				font-size: 18px
+				color: #f19e1f
+			&-name
+				margin-top: 15px
+				color: #566375
+				font-size: 16px
+				text-transform: uppercase
+			&-comment
+				margin-top: 10px
+				font-family: "Gotham - Book"
+				font-size: 14px
+				color: #566375
+.readMore
+	text-decoration: underline
+	color: #566375
+.btn-more
+	color: #566375
+	text-decoration: underline
+	font-family: "Gotham - Medium"
+	font-size: 22px
+
+.star
+	text-align: center
+	margin: 0
+	color: #f19e1f
+	font-size: 12px
+	white-space: nowrap
+	&-i
+		&-hover
+			color: green 
+		&-selected
+			color: red
+	&-value
+		display: inline-block
+		color: #96a6a7
+	
+.stars-desc
+	display: none
+	position: fixed
+	z-index: 10
+	width: 200px
+	min-height: 50px;
+	background-color: #a035c2
+	text-align: center
+	color: #fff
+	padding-top: 7px

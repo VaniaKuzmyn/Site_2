@@ -1,0 +1,482 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>progect 10</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+
+    <link href="build/css/reset.css" rel="stylesheet" />
+
+
+    <link href="build/css/main.css" rel="stylesheet" />
+
+</head>
+<body>
+    <header class="header">
+        <div class="header-wrap">
+            <div class="map">
+                <iframe class="iframe iframe_1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d231239.33594929148!2d55.148087662514286!3d25.097980934699596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2z0JTRg9Cx0LDQuSAtINCe0LHRitC10LTQuNC90LXQvdC90YvQtSDQkNGA0LDQsdGB0LrQuNC1INCt0LzQuNGA0LDRgtGL!5e0!3m2!1sru!2sua!4v1556140693314!5m2!1sru!2sua" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <iframe class="iframe iframe_2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7274715.918399008!2d26.185272490326835!3d27.089909859408003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14368976c35c36e9%3A0x2c45a00925c4c444!2z0JXQs9C40L_QtdGC!5e0!3m2!1sru!2sua!4v1555961312670!5m2!1sru!2sua" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <i class="map-close fa fa-times" aria-hidden="true"></i>
+            </div>
+            <div class="enter">
+                <div class="enter-over">
+                    Welcome<br />
+                    Your name: <span class="enter-over-name"></span>
+                </div>
+                <form action="build/php/sign.php" method="post" class="enter-form">
+                    <div class="enter-exit">X</div>
+                    <div class="enter-title">Sign In Form</div>
+                    <div class="enter-wrap">
+                        <input type="text" value="" class="enter-name enter-inp" placeholder="username" />
+                        <input type="password" value="" class="enter-pass enter-inp" placeholder="password" />
+                        <button class="enter-btn"><i class="fas fa-play"></i></button>
+                    </div>
+                    <div class="enter-forgot">Forgot your password? <a href="#" class="enter-forgot-click">click here</a></div>
+                </form>
+
+            </div>
+
+
+            <div class="row top">
+
+                <div class="col col-6 col-xs-6 col-sm-5 col-md-2 col-lg-3 logo"><img src="build/images/icon/Vector_Smart_Object.png" alt="Logo" /></div>
+                <div class="menu col col-xs-12 col-sm-2 col-12 col-md-5 ">
+                    <div class="menu-mobile">Menu</div>
+                    <ul class="menu-desc">
+                        <li class="menu-item"><a href="#">Reality</a> </li>
+                        <li class="menu-item"><a href="#">Living</a></li>
+                        <li class="menu-item"><a href="#">EduCation</a></li>
+                        <li class="menu-item"><a href="#">Entertainment</a></li>
+                        <li class="menu-item"><a href="#">Mobility</a></li>
+                    </ul>
+                </div>
+                <div class="col col-6 col-sm-5 col-md-4 col-lg-3 offset-md-1 offset-lg-1 col-xs-6 col-md-3 login">
+                    <div class="scan">
+                        <i class="scan-left scan-i scan-i_not fas fa-arrow-left"></i>
+                        <span class="scan-inf">Some information</span>
+                        <i class="scan-close scan-i_not scan-i fas fa-times"></i>
+                    </div>
+                    <div class="log"><i class="fas fa-user"></i>Login</div>
+                </div>
+            </div>
+            <div class="row travel">
+
+                <div class="col col-12 col-md-8 offset-md-2 title">
+                    <form class="search-form">
+                        <div class="search-text-wrap">
+                            <h1 id="typed" class="search-text "></h1>
+                        </div>
+                        <select class="search-sel search-sel_1">
+                            <option value="Dubai">Dubai1</option>
+                            <option value="Dubai">Dubai2</option>
+                            <option value="Dubai">Dubai3</option>
+                        </select>
+                        <select class="search-sel search-sel_2">
+                            <option value="Education">Education1</option>
+                            <option value="Education">Education2</option>
+                            <option value="Education">Education3</option>
+                        </select><br />
+
+                        <input class="search-inp" type="text" name="text" value="" placeholder="Keyword, name, date, ..." /><br />
+                        <button class="search-btn">search</button>
+                    </form>
+                    <div class="over-form">
+                        <span class="over-title"> Ваша заявка отправена!!!</span>
+                        <div class="over-sel over-sel_1">wqwe</div>
+                        <div class="over-sel over-sel_2">qwe</div>
+                        <div class="over-inp">zxc</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center foots">
+                <div class="col  col-md-6 col-lg-3 sub sub_1">
+                    <btn class="sub-item sub-item_active">Recommended</btn>
+                    <btn class="sub-item">latest</btn>
+                    <btn class="sub-item">Highlights</btn>
+                </div>
+                <div class="col col-md-6 offset-xl-1 col-xl-2 col-lg-3 sub sub_2">
+                    <select class="sub_2-item foots-select">
+                        <option value="Dubai">Dubai</option>
+                        <option value="Egypt">Egypt</option>
+                    </select>
+                    <div class="sub_2-item map-btn"><span>hide map</span><i class="fas fa-map-marker-alt"></i></div>
+                </div>
+                <div class="col offset-xl-1 col-md-12 col-lg-3 sub filter">
+                    <span class="filter-text">filter:</span>
+                    <i id="green" class="filter-i_1 filter-i fas fa-home"></i>
+                    <i class="filter-i_2 filter-i fab fa-mandalorian"></i>
+                    <i class="filter-i_3 filter-i fas fa-graduation-cap"></i>
+                    <i id="yellow" class="filter-i_4 filter-i fas fa-music"></i>
+                    <i id="violet" class="filter-i_5 filter-i fas fa-car"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section section_2">
+        <div class="section_2-wrap">
+            <div class="cards green" data-name="first-card">
+                <div class="cards-price">$2,990</div>
+                <img class="cards-img cards-img_green" src="build/images/bg/Layer_6.png" alt="Alternate Text" />
+                <h4 class="cards-title">2 bedroom house for rent in Dubai</h4>
+                <div class="cards-name cards-name_green">Vision Agency</div>
+                <div class="cards-icon  cards-icon_green"><i class="cards-icon-just fas fa-home"></i></div>
+                <div class="star">
+                    <i title="Poor" class="star-i far fa-star"></i>
+                    <i title="Fair" class="star-i far fa-star"></i>
+                    <i title="Good" class="star-i far fa-star"></i>
+                    <i title="Excellent" class="star-i far fa-star"></i>
+                    <i title="WOW!!!" class="star-i far fa-star"></i>
+                    <div class="star-value">(<span class="star-value-num">365</span>)</div>
+                </div>
+                <div class="stars-desc"></div>
+            </div>
+            <div class="cards yellow" data-name="second-card">
+                <img class="cards-img cards-img_yellow" src="build/images/bg/Layer_7.png" alt="Alternate Text" />
+                <h4 class="cards-title">Beach party festival 2014</h4>
+                <div class="cards-name  cards-name_yellow">Long beach</div>
+                <div class="cards-icon  cards-icon_yellow"><i class="cards-icon-just fas fa-music"></i></div>
+                <div class="star">
+                    <i title="Poor" class="star-i far fa-star"></i>
+                    <i title="Fair" class="star-i far fa-star"></i>
+                    <i title="Good" class="star-i far fa-star"></i>
+                    <i title="Excellent" class="star-i far fa-star"></i>
+                    <i title="WOW!!!" class="star-i far fa-star"></i>
+                    <div class="star-value">(<span class="star-value-num">1165</span>)</div>
+                </div>
+                <div class="stars-desc"></div>
+            </div>
+            <div class="cards violet" data-name="third-card">
+
+                <img class="cards-img cards-img_violet" src="build/images/bg/Layer_6.png" alt="Alternate Text" />
+                <div class="cards-main">
+                    <button class="cards-main-btn"><i class="cards-main-btn-i fas fa-search"></i>Show more</button>
+                    <div class="stars">
+                        <div class="stars-left">
+                            <i class="stars-left-i far fa-star"></i>
+                            <i class="stars-left-i far fa-star"></i>
+                            <i class="stars-left-i far fa-star"></i>
+                            <i class="stars-left-i far fa-star"></i>
+                            <i class="stars-left-i far fa-star"></i>
+                        </div>
+                        <i class="stars-right fas fa-comments"></i>
+                    </div>
+                </div>
+                <h4 class="cards-title">Aliquam quis pulvinar purus</h4>
+                <div class="cards-name  cards-name_violet">Bus Trans</div>
+                <div class="cards-icon cards-icon_violet"><i class="cards-icon-just fas fa-car"></i></div>
+                <div class="star">
+                    <i title="Poor" class="star-i far fa-star"></i>
+                    <i title="Fair" class="star-i far fa-star"></i>
+                    <i title="Good" class="star-i far fa-star"></i>
+                    <i title="Excellent" class="star-i far fa-star"></i>
+                    <i title="WOW!!!" class="star-i far fa-star"></i>
+                    <div class="star-value">(<span class="star-value-num">1165</span>)</div>
+                </div>
+                <div class="stars-desc"></div>
+            </div>
+            <div class="cards green" data-name="fourth-card">
+                <div class="cards-price">$2,990</div>
+                <img class="cards-img cards-img_green" src="build/images/bg/Layer_6.png" alt="Alternate Text" />
+                <h4 class="cards-title">4 bedroom house for rent in Dubai</h4>
+                <div class="cards-name cards-name_green">reality Agency</div>
+                <div class="cards-icon cards-icon_green"><i class="cards-icon-just fas fa-home"></i></div>
+                <div class="star">
+                    <i title="Poor" class="star-i far fa-star"></i>
+                    <i title="Fair" class="star-i far fa-star"></i>
+                    <i title="Good" class="star-i far fa-star"></i>
+                    <i title="Excellent" class="star-i far fa-star"></i>
+                    <i title="WOW!!!" class="star-i far fa-star"></i>
+                    <div class="star-value">(<span class="star-value-num">165</span>)</div>
+                </div>
+                <div class="stars-desc"></div>
+            </div>
+            <div class="cardl green" data-name="fifth-card">
+                <img class="cardl-img cardl-img_green" src="build/images/bg/Layer_9.png" alt="Alternate Text" />
+
+                <div class="cardl-main">
+                    <h4 class="cardl-main-title">Vision agency</h4>
+                    <div class="stars cardl-main-star">
+                        <i title="Poor" class="stars-i far fa-star"></i>
+                        <i title="Fair" class="stars-i far fa-star"></i>
+                        <i title="Good" class="stars-i far fa-star"></i>
+                        <i title="Excellent" class="stars-i far fa-star"></i>
+                        <i title="WOW!!!" class="stars-i far fa-star"></i>
+                        <div class="star-value">(<span class="star-value-num">365</span>)</div>
+                    </div>
+                </div>
+                <div class="cardl-icon cards-icon_green"><i class="cards-icon-just fas fa-home"></i></div>
+
+                <div class="cardl-text">
+                    <div class="cardl-text-photo"><img src="build/images/people/Layer_10.png" alt="Alternate Text" /></div>
+                    <div class="cardl-text-wrap">
+                        <div class="cardl-text-wrap-star">
+                            <i title="Poor" class="star-i far fa-star"></i>
+                            <i title="Fair" class="star-i far fa-star"></i>
+                            <i title="Good" class="star-i far fa-star"></i>
+                            <i title="Excellent" class="star-i far fa-star"></i>
+                            <i title="WOW!!!" class="star-i far fa-star"></i>
+                        </div>
+                        <div class="cardl-text-wrap-name">Lucy-P</div>
+                        <div class="cardl-text-wrap-comment">“Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis posuere orci ornare. Duis mattis sagittis fringilla.” <a href="#" class="readMore">...read more</a></div>
+                        <div class="stars-desc"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardl yellow" data-name="sixth-card">
+                <img class="cardl-img cardl-img_yellow" src="build/images/bg/Layer_12.png" alt="Alternate Text" />
+
+                <div class="cardl-main">
+                    <h4 class="cardl-main-title">Skybox club</h4>
+                    <div class="stars cardl-main-star ">
+                        <i title="Poor" class="stars-i far fa-star"></i>
+                        <i title="Fair" class="stars-i far fa-star"></i>
+                        <i title="Good" class="stars-i far fa-star"></i>
+                        <i title="Excellent" class="stars-i far fa-star"></i>
+                        <i title="WOW!!!" class="stars-i far fa-star"></i>
+                        <div class="star-value">(<span class="star-value-num">1365</span>)</div>
+                    </div>
+                </div>
+                <div class="cardl-icon cards-icon_yellow"><i class="cards-icon-just fas fa-home"></i></div>
+
+                <div class="cardl-text">
+                    <div class="cardl-text-photo"><img src="build/images/people/Layer_13_copy.png" alt="Alternate Text" /></div>
+                    <div class="cardl-text-wrap">
+                        <div class="cardl-text-wrap-star">
+                            <i title="Poor" class="star-i far fa-star"></i>
+                            <i title="Fair" class="star-i far fa-star"></i>
+                            <i title="Good" class="star-i far fa-star"></i>
+                            <i title="Excellent" class="star-i far fa-star"></i>
+                            <i title="WOW!!!" class="star-i far fa-star"></i>
+                        </div>
+                        <div class="cardl-text-wrap-name">Peter145</div>
+                        <div class="cardl-text-wrap-comment">“Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis posuere orci ornare. Duis mattis sagittis fringilla.” <a href="#" class="readMore">...read more</a></div>
+                        <div class="stars-desc"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="cards green">
+                <div class="cards-price">$2,990</div>
+                <img class="cards-img cards-img_green" src="build/images/bg/Layer_6.png" alt="Alternate Text" />
+                <h4 class="cards-title">2 bedroom house for rent in Dubai</h4>
+                <div class="cards-name cards-name_green">Vision Agency</div>
+                <div class="cards-icon cards-icon_green"><i class="cards-icon-just fas fa-home"></i></div>
+                <div class="star">
+                    <i title="Poor" class="star-i far fa-star"></i>
+                    <i title="Fair" class="star-i far fa-star"></i>
+                    <i title="Good" class="star-i far fa-star"></i>
+                    <i title="Excellent" class="star-i far fa-star"></i>
+                    <i title="WOW!!!" class="star-i far fa-star"></i>
+                    <div class="star-value">(<span class="star-value-num">365</span>)</div>
+                </div>
+                <div class="stars-desc"></div>
+            </div>
+            <div class="cards yellow">
+                <img class="cards-img  cards-img_yellow" src="build/images/bg/Layer_7.png" alt="Alternate Text" />
+                <h4 class="cards-title">Beach party festival 2014</h4>
+                <div class="cards-name cards-name_yellow">Long beach</div>
+                <div class="cards-icon cards-icon_yellow"><i class="cards-icon-just fas fa-music"></i></div>
+                <div class="star">
+                    <i title="Poor" class="star-i far fa-star"></i>
+                    <i title="Fair" class="star-i far fa-star"></i>
+                    <i title="Good" class="star-i far fa-star"></i>
+                    <i title="Excellent" class="star-i far fa-star"></i>
+                    <i title="WOW!!!" class="star-i far fa-star"></i>
+                    <div class="star-value">(<span class="star-value-num">1165</span>)</div>
+                </div>
+                <div class="stars-desc"></div>
+            </div>
+            <div class="cards violet">
+                <img class="cards-img  cards-img_violet" src="build/images/bg/Layer_6.png" alt="Alternate Text" />
+                <h4 class="cards-title">Aliquam quis pulvinar purus</h4>
+                <div class="cards-name cards-name_violet">Bus trans</div>
+                <div class="cards-icon cards-icon_violet"><i class="cards-icon-just fas fa-car"></i></div>
+                <div class="star">
+                    <i title="Poor" class="star-i far fa-star"></i>
+                    <i title="Fair" class="star-i far fa-star"></i>
+                    <i title="Good" class="star-i far fa-star"></i>
+                    <i title="Excellent" class="star-i far fa-star"></i>
+                    <i title="WOW!!!" class="star-i far fa-star"></i>
+                    <div class="star-value">(<span class="star-value-num">365</span>)</div>
+                </div>
+                <div class="stars-desc"></div>
+            </div>
+            <div class="cards green">
+                <div class="cards-price">$2,990</div>
+                <img class="cards-img  cards-img_green" src="build/images/bg/Layer_6.png" alt="Alternate Text" />
+                <h4 class="cards-title">4 bedroom house for rent in Dubai</h4>
+                <div class="cards-name cards-name_green">reality Agency</div>
+                <div class="cards-icon cards-icon_green"><i class="cards-icon-just fas fa-home"></i></div>
+                <div class="star">
+                    <i title="Poor" class="star-i far fa-star"></i>
+                    <i title="Fair" class="star-i far fa-star"></i>
+                    <i title="Good" class="star-i far fa-star"></i>
+                    <i title="Excellent" class="star-i far fa-star"></i>
+                    <i title="WOW!!!" class="star-i far fa-star"></i>
+                    <div class="star-value">(<span class="star-value-num">165</span>)</div>
+                </div>
+                <div class="stars-desc"></div>
+            </div>
+            <div class="cardl green">
+                <img class="cardl-img cardl-img_green" src="build/images/bg/Layer_9.png" alt="Alternate Text" />
+
+                <div class="cardl-main">
+                    <h4 class="cardl-main-title">Vision agency</h4>
+                    <div class="stars cardl-main-star">
+                        <i title="Poor" class="stars-i far fa-star"></i>
+                        <i title="Fair" class="stars-i far fa-star"></i>
+                        <i title="Good" class="stars-i far fa-star"></i>
+                        <i title="Excellent" class="stars-i far fa-star"></i>
+                        <i title="WOW!!!" class="stars-i far fa-star"></i>
+                        <div class="star-value">(<span class="star-value-num">365</span>)</div>
+                    </div>
+                </div>
+                <div class="cardl-icon cards-icon_green"><i class="cards-icon-just fas fa-home"></i></div>
+
+                <div class="cardl-text">
+                    <div class="cardl-text-photo"><img src="build/images/people/Layer_10.png" alt="Alternate Text" /></div>
+                    <div class="cardl-text-wrap">
+                        <div class="cardl-text-wrap-star">
+                            <i title="Poor" class="star-i far fa-star"></i>
+                            <i title="Fair" class="star-i far fa-star"></i>
+                            <i title="Good" class="star-i far fa-star"></i>
+                            <i title="Excellent" class="star-i far fa-star"></i>
+                            <i title="WOW!!!" class="star-i far fa-star"></i>
+                        </div>
+                        <div class="cardl-text-wrap-name">Lucy-P</div>
+                        <div class="cardl-text-wrap-comment">“Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis posuere orci ornare. Duis mattis sagittis fringilla.” <a href="#" class="readMore">...read more</a></div>
+                        <div class="stars-desc"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="cards green">
+                <div class="cards-price">$2,990</div>
+                <img class="cards-img  cards-img_green" src="build/images/bg/Layer_6.png" alt="Alternate Text" />
+                <h4 class="cards-title">2 bedroom house for rent in Dubai</h4>
+                <div class="cards-name cards-name_green">Vision Agency</div>
+                <div class="cards-icon cards-icon_green"><i class="cards-icon-just fas fa-home"></i></div>
+                <div class="star">
+                    <i title="Poor" class="star-i far fa-star"></i>
+                    <i title="Fair" class="star-i far fa-star"></i>
+                    <i title="Good" class="star-i far fa-star"></i>
+                    <i title="Excellent" class="star-i far fa-star"></i>
+                    <i title="WOW!!!" class="star-i far fa-star"></i>
+                    <div class="star-value">(<span class="star-value-num">365</span>)</div>
+                </div>
+                <div class="stars-desc"></div>
+            </div>
+            <div class="cards yellow">
+                <img class="cards-img  cards-img_yellow" src="build/images/bg/Layer_7.png" alt="Alternate Text" />
+                <h4 class="cards-title">Beach party festival 2014</h4>
+                <div class="cards-name cards-name_yellow">Long beach</div>
+                <div class="cards-icon cards-icon_yellow"><i class="cards-icon-just fas fa-music"></i></div>
+                <div class="star">
+                    <i title="Poor" class="star-i far fa-star"></i>
+                    <i title="Fair" class="star-i far fa-star"></i>
+                    <i title="Good" class="star-i far fa-star"></i>
+                    <i title="Excellent" class="star-i far fa-star"></i>
+                    <i title="WOW!!!" class="star-i far fa-star"></i>
+                    <div class="star-value">(<span class="star-value-num">1165</span>)</div>
+                </div>
+                <div class="stars-desc"></div>
+            </div>
+        </div>
+        <a href="#" class="btn-more">Load more <i class="fas fa-arrow-right"></i></a>
+    </section>
+
+    <div class="section section_3">
+        <div class="offer">
+            <h2 class="offer-title">What can DuHoot offer to you?/</h2>
+            <p class="offer-subtitle">Etiam cursus ipsum quis enim faucibus</p>
+
+            <div class="offer-icons">
+                <i class="offer-icons-i fas fa-home"></i>
+                <i class="offer-icons-i fab fa-mandalorian"></i>
+                <i class="offer-icons-i offer-icons-i_3 fas fa-graduation-cap"></i>
+                <i class="offer-icons-i fas fa-music"></i>
+                <i class="offer-icons-i fas fa-car"></i>
+            </div>
+            <h5 class="offer-main">Reality</h5>
+            <div class="offer-text">
+                <div class="offer-text-item">
+                    <div class=""><i class="offer-text-item-i offer-text-item-i_1 fas fa-bolt"></i></div>
+                    <div class="offer-text-item-desc">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</div>
+                </div>
+                <div class="offer-text-item">
+                    <div class=""><i class="offer-text-item-i fas fa-leaf"></i></div>
+                    <div class="offer-text-item-desc">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="foot">
+            <div class="foot-up">
+                <h2 class="foot-title ">Subscribe to our newsletter</h2>
+                <h2 class="form-over">
+                    Thank you for subscriber!!!<br />
+                    Your email: <span class="form-over-email"></span>
+                </h2>
+
+                <form class="form">
+                    <i class="form-i far fa-envelope"></i>
+                    <input class="form-inp form-inp-email" type="email" name="email" value="" placeholder="your@email.com" /><br />
+
+                    <button class="form-btn">Subscribe</button>
+                </form>
+            </div>
+            <div class="foot-down row justify-content-around">
+                <div class="item">
+                    <h5 class="item-title">Ipsum quis</h5>
+                    <p class="item-text">
+                        Aliquam quis
+                        Pulvinar purus
+                        Etiam cursus
+                        Ipsum quis
+                        Enim faucibus
+                    </p>
+                </div>
+                <div class="item">
+                    <h5 class="item-title">Ipsum quis</h5>
+                    <p class="item-text">
+                        Aliquam quis
+                        Pulvinar purus
+                        Etiam cursus
+                        Ipsum quis
+                        Enim faucibus
+                    </p>
+                </div>
+                <div class="follow">
+                    <h5 class="follow-title">Follow us</h5>
+                    <div class="follow-icons">
+                        <i class="follow-icons-i fab fa-facebook-f"></i>
+                        <i class="follow-icons-i fab fa-twitter"></i>
+                        <i class="follow-icons-i fab fa-google-plus-g"></i>
+                        <i class="follow-icons-i fab fa-youtube"></i>
+                    </div>
+                    <div class="copy">Copyright © All Rights reserved</div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <script src="build/js/typed.min.js"></script>
+
+    <script src="build/js/main.js"></script>
+</body>
+</html>
