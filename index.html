@@ -1,4 +1,4 @@
-﻿<!doctype html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -16,7 +16,8 @@
     <link href="build/css/main.css" rel="stylesheet" />
 
 </head>
-<body>
+<body >
+        
     <header class="header">
         <div class="header-wrap">
             <div class="map">
@@ -29,12 +30,12 @@
                     Welcome<br />
                     Your name: <span class="enter-over-name"></span>
                 </div>
-                <form action="build/php/sign.php" method="post" class="enter-form">
+                <form class="enter-form" id="enter-form">
                     <div class="enter-exit">X</div>
                     <div class="enter-title">Sign In Form</div>
                     <div class="enter-wrap">
-                        <input type="text" value="" class="enter-name enter-inp" placeholder="username" />
-                        <input type="password" value="" class="enter-pass enter-inp" placeholder="password" />
+                        <input type="text" value="" class="enter-name enter-inp" placeholder="username" required/>
+                        <input type="password" value="" class="enter-pass enter-inp" placeholder="password" required/>
                         <button class="enter-btn"><i class="fas fa-play"></i></button>
                     </div>
                     <div class="enter-forgot">Forgot your password? <a href="#" class="enter-forgot-click">click here</a></div>
@@ -65,9 +66,10 @@
                     <div class="log"><i class="fas fa-user"></i>Login</div>
                 </div>
             </div>
-            <div class="row travel">
+            <div class="row travel" data-vide-bg="build/videos/videoplayback.mp4">
 
-                <div class="col col-12 col-md-8 offset-md-2 title">
+                <div class="col col-12 col-md-8 offset-md-2 title" >
+
                     <form class="search-form">
                         <div class="search-text-wrap">
                             <h1 id="typed" class="search-text "></h1>
@@ -396,7 +398,7 @@
             <p class="offer-subtitle">Etiam cursus ipsum quis enim faucibus</p>
 
             <div class="offer-icons">
-                <i class="offer-icons-i fas fa-home"></i>
+                <i class="offer-icons-i offer-icons-i_first fas fa-home"></i>
                 <i class="offer-icons-i fab fa-mandalorian"></i>
                 <i class="offer-icons-i offer-icons-i_3 fas fa-graduation-cap"></i>
                 <i class="offer-icons-i fas fa-music"></i>
@@ -426,9 +428,9 @@
                     Your email: <span class="form-over-email"></span>
                 </h2>
 
-                <form class="form">
+                <form class="form form_subscribe" id="form_subscribe">
                     <i class="form-i far fa-envelope"></i>
-                    <input class="form-inp form-inp-email" type="email" name="email" value="" placeholder="your@email.com" /><br />
+                    <input class="form-inp form-inp-email" type="email" name="email" value="" placeholder="your@email.com" required/><br />
 
                     <button class="form-btn">Subscribe</button>
                 </form>
@@ -473,10 +475,13 @@
 
 
 
-
     <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+
+    <script src="build/js/jquery.vide.js"></script>
     <script src="build/js/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.16.0/polyfill.min.js"></script>
 
     <script src="build/js/main.js"></script>
+    
 </body>
 </html>

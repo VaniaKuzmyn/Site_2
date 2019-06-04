@@ -38,7 +38,7 @@
 				left: 68px
 				top: 50%
 				height: 2px
-				width: 63px
+				width: 60px
 				background-color: #9dacad
 			
 	&-main
@@ -138,6 +138,12 @@
 		color: rgba(#fff, 0.7)
 		&::-webkit-input-placeholder
 			color: rgba(#fff, 0.7)
+		
+		&:-webkit-autofill,&:-webkit-autofill:hover, &:-webkit-autofill:focus, &:-webkit-autofill:active  
+			-webkit-box-shadow: 0 0 0px 1000px rgba(#000, 1) inset
+			-webkit-box-shadow: 0 0 0px 1000px rgba(#000, 0.1) inset
+			-webkit-text-fill-color: rgba(#fff, 0.7)
+
 	&-btn
 		position: absolute
 		right: 5px

@@ -90,7 +90,7 @@
 			color: #fff
 			cursor: pointer
 			&:hover
-			color: #96a6a7
+				color: #96a6a7
 
 	& .log
 		display: flex
@@ -107,8 +107,6 @@
 			padding-right: 10px
 
 .travel
-	background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('../images/bg/Layer_4.png') center center no-repeat
-	background-size: cover
 	min-height: 375px
 	position: relative 
 	text-align: center
@@ -129,13 +127,13 @@
 	&-sel
 		font-family: "Gotham - Book"
 		font-size: 18px
-		width: 230px
+		width: 220px
 		margin: 0 10px
 		border: 1px solid rgba(255, 255, 255, 0.2)
 		border-radius: 20px
 		box-sizing: border-box
 		padding: 10px 20px
-		color: rgba(#ffffff,0.5)
+		color: rgba(#ffffff,0.8)
 		appearance: none
 		background: url('../images/icon/arrow-down-sign-to-navigate.svg') center right 20px no-repeat, rgba(#000,0.3)
 		background-size: 20px 20px	
@@ -148,12 +146,12 @@
 		border: 1px solid rgba(255, 255, 255, 0.2)
 		border-radius: 20px
 		padding: 10px 20px
-		width: 485px
-		color: rgba(#fff, 0.5)
+		width: 465px
+		color: rgba(#fff, 0.8)
 		margin-top: 15px
 		cursor: pointer
 		&::placeholder
-			color: rgba(#ffffff, 0.5)
+			color: rgba(#ffffff, 0.8)
 		&::-moz-placeholder
 			color: rgba(#ffffff, 1)
 		
@@ -351,114 +349,25 @@
 		position: absolute
 		top: 10px
 		right: 10px
+		color: rgba(#a5000094, 0.7)
 		&:hover
 			color: rgb(0, 126, 165)
 			cursor: pointer
 			text-shadow: 0 0 10px rgb(0, 126, 165)
 	&-over
 		display: none
-	
-
-
-@media(max-width: 991px)
-	.map
-		font-size: 15px
-	.foot-select
-		font-size: 15px
-	.sub
-		font-size: 15px
-	.filter
-		font-size: 25px
-		justify-content: space-around
-	.login .log
-		padding-left: 10px
-	.title-text
-		font-size: 25px
-	.menu
-		position: static
-	.menu-desc
-		display: none
-		position: absolute
-		left: 0
-		top: 75px
-		background-color: rgba(red, 0.9)
-		z-index: 1
-		width: 100%
 		text-align: center
-		font-size: 25px
-		background-color: rgba(96, 52, 202, 0.87)
-		outline: none
-		&_active
-			display: block
-			&:focus
-				outline: none
-				border: none
-		& li
-			&:hover
-				background-color: rgba(96, 52, 202, 1)
-			
-	.menu-mobile
-		display: flex
-		
-	.title-sel
-		width: 44%
-	.title-inp
-		width: 94%
-	.login
-		& .scan
-			right: -350px
-			&-active
-				right: 12px
 
+video
+	max-width: none
 
-
-
-		
-
-@media(max-width: 768px)
-	.title-sel
-		width: 95%
-		margin: 10px
-	.title-inp
-		width: 95%
-	.login
-		& .scan
-			right: -250px
-			&-active
-				right: 0
-
-
-@media(max-width: 576px)
-	.menu
-		order: 3
-		padding: 10px 0
-		background: #c7cecf
-		postition: static 
-		
-	.filter
-		font-size: 15px
-		
-	.foot .sub_1
-		padding: 0 5px;
-	.filter
-		justify-content: center
-		& i
-			font-size: 10px
-	.login
-		padding: 0
-		& .scan
-			display: none
-	.map
-		width: 90%
-		
-	.iframe
-		width: 100% !important
-		
-@media(max-width: 400px)
-	.filter
-		& i
-			padding: 10px
-
+@keyframes blink
+	0%
+		left: -20%
+	
+	100%
+		left: 130%
+	
 
 .top
 	align-items: stretch !important
@@ -486,14 +395,6 @@ button:focus,
 	outline-width: 0!important;
 	outline-style: none!important;
 	box-shadow: 0 0 0 0 rgba(0,123,255,0)!important;
-
-@keyframes blink
-	0%
-		left: -20%
-	
-	100%
-		left: 130%
-	
 
     
 
